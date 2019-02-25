@@ -1,6 +1,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
 /* universal */
 
 body {
@@ -68,6 +88,27 @@ p {
   text-decoration: none;
 }
 
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
 /* sidebar */
 
 aside {
@@ -121,4 +162,27 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* tables */
+
+.dishes {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 1.2em;
+}
+
+.dishes td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-name {
+  width: 30%;
+}
+
+.row-weight,.row-calorie_value,.row-proteins, .row-carbohydrates, .row-fats {
+  width: 10%;
 }
