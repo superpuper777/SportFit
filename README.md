@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Rubizza-Winter 2018
+Homework 2
+This application is for those who want to track their food intake :)
 
-* Ruby version
+There are three entities: a user, a dish and an ingestion and a has_many :through association.
+Using Postgresql
 
-* System dependencies
+## How to use
 
-* Configuration
+* Bundle install
 
-* Database creation
+* rails db:migrate
 
-* Database initialization
+* If you want to login as admin input email: 'alenafevrik@gmail.com' password: 'alenafevrik'.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* If you want to login as user input email: 'alexeybudnik@gmail.com' password: 'alexeybudnik' or sign up.
