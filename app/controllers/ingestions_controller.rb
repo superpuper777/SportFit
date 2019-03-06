@@ -1,4 +1,6 @@
 class IngestionsController < ApplicationController
+  before_action :current_user,   only: [:edit, :update]
+  before_action :admin_user,     only: [:destroy]
 
   def index
     @ingestions = Ingestion.all

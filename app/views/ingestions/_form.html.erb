@@ -1,7 +1,6 @@
 <%= form_for(@ingestion) do |f| %>
 
-<%= f.label :user_id %>
-<%= f.text_field :user_id, class: 'form-control' %>
+
 
 <%= f.label :dish_id %>
 <% Dish.all.each do |dish| %>

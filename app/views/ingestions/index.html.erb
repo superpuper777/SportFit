@@ -11,6 +11,7 @@
   <%- ingestion.dishes.each do |dish| %>
   <tbody>
     <tr>
+      <td><%= current_user.name %></td>
       <td><%= dish.name %></td>
       <td><%= ingestion.created_at.to_date %></td>
       <td><%= link_to 'Edit', edit_ingestion_path(ingestion) %></td>
@@ -20,3 +21,5 @@
   <% end %>
   </tbody>
 </table>
+<br>
+<%= link_to 'New Ingestion', new_ingestion_path %>
