@@ -1,12 +1,12 @@
 class DishesController < ApplicationController\
 
   def index
-    @dish = Dish.all
+    @dishes = Dish.all
   end
 
   def show
     @dish = Dish.find(params[:id])
-  end
+   end
 
   def new
     @dish = Dish.new

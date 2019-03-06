@@ -12,6 +12,7 @@ gem 'yaml_db'
 #gem 'sqlite3', '~> 1.3.6'
 gem 'pg'
 gem 'rb-readline'
+gem 'pry-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :dishes, dependent: :destroy
+  has_many :ingestions, inverse_of: :user, dependent: :destroy
   before_save { email.downcase! }
   validates :name,  presence: true, length: { maximum: 50 }
   validates :surname,  presence: true, length: { maximum: 50 }

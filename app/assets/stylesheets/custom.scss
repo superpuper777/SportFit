@@ -166,23 +166,38 @@ input {
 
 /* tables */
 
-.dishes {
+.dishes, .ingestions {
   table-layout: fixed;
   width: 100%;
   white-space: nowrap;
   font-size: 1.2em;
 }
 
-.dishes td {
+.dishes td, .ingestions td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.row-name {
+.row-name, .row-user, .row-dish, .row-created_at {
   width: 30%;
 }
 
 .row-weight,.row-calorie_value,.row-proteins, .row-carbohydrates, .row-fats {
   width: 10%;
+}
+
+/* ingestion */
+
+.ingestions {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.dish {
+  margin-top: 5em;
+  padding-top: 0;
 }
