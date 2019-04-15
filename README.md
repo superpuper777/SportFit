@@ -15,6 +15,3 @@ Using Postgresql
 
 * rails db:migrate
 
-* If you want to login as admin input email: 'alenafevrik@gmail.com' password: 'alenafevrik'.
-
-* If you want to login as user input email: 'alexeybudnik@gmail.com' password: 'alexeybudnik' or sign up.
